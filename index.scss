@@ -1,3 +1,42 @@
 body {
-    background-color: #3a4764;
+	background-color: #3a4764;
+}
+
+.calculator {
+	width: 450px;
+	height: 450px;
+	margin: 10vh auto;
+	background-color: bisque;
+
+	.input-display {
+		padding: 1em;
+		background-color: #182034;
+
+		color: #fff;
+		text-align: right;
+		
+	}
+	
+	.calc-button-container {
+		display: grid;
+		gap: 1em;
+		grid-template-columns: auto auto auto auto;
+
+		padding: 1em;
+
+		.final-row {
+			grid-column: span 2;
+		}
+	}
+	
+	
+}
+
+.small-button {
+	width: 90px;
+	height: 40px;
+}
+
+.large-button {
+	height: 40px;
 }

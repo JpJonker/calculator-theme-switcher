@@ -2,8 +2,17 @@ var firstNum;
 var secondNum;
 var operator;
 
+function reset () {
+    firstNum = '';
+    secondNum = '';
+    operator = '';
+}
+
 for (let i = 0; i < 10; i++) {
     $(`.num${i}`).click(function() {
+        if ($('.input-display').text() == "0") {
+            $('.input-display').text('');
+        }
         $('.input-display').append(i);
     })
 }
@@ -54,9 +63,8 @@ $('.delete').click(function() {
 })
 
 $('.reset').click(function() {
-    firstNum = '';
-    secondNum = '';
-    operator = '';
+    reset()
+
     $('.input-display').text('');
 })
 
@@ -82,10 +90,8 @@ $('.equals').click(function(){
             break;
     }
 
-    firstNum = '';
-    secondNum = '';
-    operator = '';
-    
+    reset()
+
     $('.input-display').text(result)
 })
 

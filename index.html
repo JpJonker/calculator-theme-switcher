@@ -1,66 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./index.css" type="text/css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./index.css" type="text/css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="./calculate.js" defer></script>
-  
-  <title>Frontend Mentor | Calculator app</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="./calculate.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
-</head>
-<body>
-  <main>
-    <header>
-      <h1>Calc</h1>
-      <div class="theme-switcher"></div>
-    </header>
-      <h2 class="input-display"></h2>
-    <div class="calc-button-container">
-      <div class="calc-button-row1">
-        <button class="num7">7</button>
-        <button class="num8">8</button>
-        <button class="num9">9</button>
-        <button class="delete">DEL</button>
-      </div>
-      <div class="calc-button-row2">
-        <button class="num4">4</button>
-        <button class="num5">5</button>
-        <button class="num6">6</button>
-        <button class="add">+</button>
-      </div>
-      <div class="calc-button-row3">
-        <button class="num1">1</button>
-        <button class="num2">2</button>
-        <button class="num3">3</button>
-        <button class="subtract">-</button>
-      </div>
-      <div class="calc-button-row4">
-        <button class="dot">.</button>
-        <button class="num0">0</button>
-        <button class="divide">/</button>
-        <button class="multiply">x</button>
-      </div>
-      <div class="calc-button-row5">
-        <button class="reset">RESET</button>
-        <button class="equals">=</button>
-      </div>
-    </div>
-  </main>
+		<title>Frontend Mentor | Calculator app</title>
 
-  
-  <!-- <div class="attribution">
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<!-- <style>
+    		.attribution { font-size: 11px; text-align: center; }
+    		.attribution a { color: hsl(228, 45%, 44%); }
+ 		</style> -->
+	</head>
+	<body>
+		<section class="calculator">
+			<h1 class="input-display">0</h1> 
+			<div class="calc-button-container">
+					<button class="small-button num7">7</button>
+					<button class="small-button num8">8</button>
+					<button class="small-button num9">9</button>
+					<button class="small-button delete">DEL</button>
+
+					<button class="small-button num4">4</button>
+					<button class="small-button num5">5</button>
+					<button class="small-button num6">6</button>
+					<button class="small-button add">+</button>
+
+					<button class="small-button num1">1</button>
+					<button class="small-button num2">2</button>
+					<button class="small-button num3">3</button>
+					<button class="small-button subtract">-</button>
+
+					<button class="small-button dot">.</button>
+					<button class="small-button num0">0</button>
+					<button class="small-button divide">/</button>
+					<button class="small-button multiply">x</button>
+
+					<button class="large-button final-row reset">RESET</button>
+					<button class="large-button final-row equals">=</button>
+			</div>
+		</section>
+
+		<!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+	</body>
 </html>
